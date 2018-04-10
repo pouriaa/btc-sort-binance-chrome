@@ -1,6 +1,6 @@
 $(document).on('click', '.accountInfo-lists li.th .equalValue', () => {
 
-	var balanceTable = $('.accountInfo-lists li .items');
+	let balanceTable = $('.accountInfo-lists li .items');
 
 	let rows = [];
 	for (let i = 0; i < balanceTable.length; i++) {
@@ -24,9 +24,9 @@ $(document).on('click', '.accountInfo-lists li.th .equalValue', () => {
 		return b.equalValue - a.equalValue;
 	})
 
-	let $listItems = $('.accountInfo-lists li');
-	for (let i = 0; i < $listItems.length; i++) {
-		$($listItems[i]).html(rows[i].jQueryObj);
+	let listItems = $('.accountInfo-lists li');
+	for (let i = 0; i < listItems.length; i++) {
+		$(listItems[i]).html(rows[i].jQueryObj);
 		
 	}
 
