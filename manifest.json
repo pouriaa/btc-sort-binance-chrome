@@ -1,0 +1,23 @@
+{
+  "name": "Sort BTC Value - Binance",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Sort Binance funds table by BTC Value",
+  "homepage_url": "https://www.toptheblock.com",
+  "background": {
+    "scripts": [
+      "jquery.min.js",
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Sort by BTC"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "management"
+  ]
+}
